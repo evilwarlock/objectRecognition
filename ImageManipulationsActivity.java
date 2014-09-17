@@ -114,7 +114,7 @@ public class ImageManipulationsActivity extends Activity implements CvCameraView
     
 
     public ImageManipulationsActivity() {
-        Log.i(TAG, "Instantiated new " + this.getClass());
+//        Log.i(TAG, "Instantiated new " + this.getClass());
     }
 
     /** Called when the activity is first created. */
@@ -439,9 +439,9 @@ public class ImageManipulationsActivity extends Activity implements CvCameraView
         		rgba= tmpImg.clone(); 
         		if(countT==2)
         		{
-            	    Core.rectangle(rgba,new Point(topY,topX),new Point(lowerY, lowerX),new Scalar(0,0,0));
-            	    Core.circle(tmpImg, new Point(topY,topX), 20,new Scalar(255,0,255));
-            	    Core.circle(tmpImg,  new Point(lowerY,lowerX), 20,new Scalar(255,0,255));
+            	    Core.rectangle(rgba,new Point(topX,topY),new Point(lowerX, lowerY),new Scalar(0,0,0));
+            	    Core.circle(tmpImg, new Point(topX,topY), 20,new Scalar(255,0,255));
+            	    Core.circle(tmpImg,  new Point(lowerX, lowerY), 20,new Scalar(255,0,255));
             	    Log.i(TAG,"Location of Points"+topX+" "+topY+" "+lowerX+" "+lowerY);
             	    Log.i(TAG,"Location of Points"+topX+" "+topY+" "+lowerX+" "+lowerY);
 
